@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>MY UPDATED PAGE</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="index.css">
+ <head>
+    <title>MY UPDATED PAGE</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <br>
 <body>
-<header>
-<h1>Header</h1>
-</header>
-<section>
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Articles</a></li>
-</ul>
-</nav>
+    <header><h1 id="header">Header</h1></header>
+<section> 
+    <nav>
+        <ul>
+         <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        </ul>
+    </nav>
 <article>
-<h2>Article heading</h2>
-<p>Paragraph...</p>
-<a href="https://www.google.com/">More information...</a>
+    <h2>Article heading</h2>
+    <p id="demo">JavaScript can change the style
+        of an HTML element.</p>
+        <a href="https://www.google.com/">More information...</a>
 </article>
-<aside>
-<h2>Related</h2>
-<ul>
-<li><a href="#">Article 1</a></li>
-<li><a href="#">Article 2</a></li>
-</ul>
+<aside id="aside">
+    <h2>Related</h2>
+        <ul>
+            <li><a href="#">Article 1</a></li>
+            <li><a href="#">Article 2</a></li>
+        </ul>
 </aside>
+<br>
 </section>
-<footer>
+    <footer>
 <p>@copyright 2050 by nobody. all rights reversed</p>
-</footer>
+    </footer>
+    <script>
+        document.getElementById("header").innerText = 'hello Javascript';
+document.getElementById("aside").style.backgroundColor = "green"
+    </script>
+<br>
 </body>
 </html>
